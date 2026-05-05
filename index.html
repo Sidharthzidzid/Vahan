@@ -491,17 +491,7 @@
       gap: 8px;
     }
 
-    footer {
-      text-align: center;
-      padding: 32px 0 0;
-      font-size: 12px;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-      margin-top: 40px;
-      line-height: 1.8;
-    }
-
-    /* Raw JSON debug box */
+    /* Debug box */
     #debugBox {
       display: none;
       background: #0d1117;
@@ -516,6 +506,16 @@
       word-break: break-all;
       max-height: 300px;
       overflow-y: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      line-height: 1.8;
     }
   </style>
 </head>
@@ -535,9 +535,10 @@
     <div class="api-notice-icon">🔑</div>
     <div class="api-notice-text">
       <strong>API Key Required.</strong> This tool uses the
-      <strong>RapidAPI "India Vehicle Registration Details"</strong> API.
-      Get a free key at <a href="https://rapidapi.com" target="_blank">rapidapi.com</a>.
-      Enter your key below. Without a key, <strong>demo mode</strong> with sample data is shown.
+      <strong>RapidAPI "Vehicle RC Information V2"</strong> API
+      (<code style="font-size:11px;color:#fb923c">vehicle-rc-information-v2.p.rapidapi.com</code>).
+      Get a key at <a href="https://rapidapi.com/fatehbrar92/api/vehicle-rc-information-v2" target="_blank">rapidapi.com</a>.
+      Enter it below — without a key, <strong>demo mode</strong> with sample data is shown.
     </div>
   </div>
 
@@ -690,7 +691,4 @@
       </div>
       <div class="info-card">
         <div class="info-card-label">Tax Paid Until</div>
-        <div class="info-card-value" id="taxUpto">—</div>
-      </div>
-      <div class="info-card full-width">
-        <div class="info-card-label">Present Addres
+        <div class="info-card-value" id="taxUpto">
